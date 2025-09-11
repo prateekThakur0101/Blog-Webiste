@@ -1,0 +1,36 @@
+<footer class="modern-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <i class="bi bi-pen-fill me-2"></i>Blogify
+      </div>
+      <p class="footer-text">
+        A modern platform for writers and readers to share stories, connect, and inspire each other.
+      </p>
+      <div class="footer-links">
+        <a href="/" class="footer-link">
+          <i class="bi bi-house-door me-1"></i>Home
+        </a>
+        <a href="/user/signup" class="footer-link">
+          <i class="bi bi-person-plus me-1"></i>Join Us
+        </a>
+        <% if (locals.user) { %>
+        <a href="/blog/add-new" class="footer-link">
+          <i class="bi bi-plus-circle me-1"></i>Write
+        </a>
+        <% } %>
+        <a href="#" class="footer-link">
+          <i class="bi bi-info-circle me-1"></i>About
+        </a>
+      </div>
+      <hr class="border-light opacity-25">
+      <div class="text-center">
+        <small class="text-light opacity-75">
+          © <%= new Date().getFullYear() %> Blogify. Made with 
+          <i class="bi bi-heart-fill text-danger mx-1"></i>
+          for writers and readers everywhere.
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>
